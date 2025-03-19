@@ -1,0 +1,10 @@
+numpy
+pandas
+opencv-python
+scipy
+matplotlib
+scikit-image
+opencv-python
+imgaug
+# tensorflow==1.15.0
+keras==2.1.6

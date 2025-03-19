@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  dl-train:
+    build: .
+    volumes:
+      - /home/buaa22/Software/zhaoshengyun/ALSAM/data/UESAT_RGB_53/MMdata:/app/data/UESAT_RGB_53/MMdata          # 挂载本地数据集目录
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia      # 使用 GPU 设备
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    runtime: nvidia               # 使用 NVIDIA 运行时
+    command: python3 pose_estimator.py train --dataset uesat --datalist sam5_VAE3_kmeans_pose.txt --weights coco --image_scale 0.5 --ori_resolution 24 --rot_aug --rot_image_aug

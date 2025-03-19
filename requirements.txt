@@ -1,0 +1,12 @@
+mmengine==0.10.3
+mmcv==2.1.0
+prettytable
+pycocotools
+shapely
+terminaltables
+matplotlib
+numpy
+scipy
+six
+tqdm
+cuml
