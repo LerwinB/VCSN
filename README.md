@@ -19,7 +19,8 @@ python MMtest.py configs/deeplabv3plus/deeplabv3plus_r50_HILrgb.py work_dirs/dee
 ```
 ## AAMSD Dataset
 ### Download
-[[Baidu Drive]](https://pan.baidu.com/s/1dqL5CJ2b7mIzGR_w6I4eag?pwd=wqaf )
+This dataset is distributed under controlled access. Researchers must first request permission by emailing [syzhao@buaa.edu.cn] with their full name, institution, and intended research purpose. If approved, a unique verification code will be provided, which is required before downloading the dataset. Redistribution of the dataset is prohibited.
+
 ### usage
 
 
